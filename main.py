@@ -8,8 +8,5 @@ text = input("Enter your secret word: ").lower()
 # ask the user for the shift value
 shift = int(input("Enter your shift value: \n"))
 
-# check if encryption or decryption method was chosen and run the appropriate function
-if direction == 'encode':
-    edf.encrypt(word=text, encryption=shift)
-else:
-    edf.decrypt(word=text, encryption=shift)
+# run caesar function
+edf.caesar(word=text, encryption=shift, direction=direction)
