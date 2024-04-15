@@ -11,3 +11,5 @@ shift = int(input("Enter your shift value: \n"))
 # check if encryption or decryption method was chosen and run the appropriate function
 if direction == 'encode':
     edf.encrypt(word=plain_text, encryption=shift)
+else:
+    edf.decrypt(word=plain_text, encryption=shift)
