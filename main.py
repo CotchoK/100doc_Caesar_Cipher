@@ -4,12 +4,12 @@ import enc_dec_funcs as edf
 direction = input("Type 'encode' to encrypt, type 'decode' to decrypt\n").lower()
 
 # ask for the word they use wants to encrypt/decrypt
-plain_text = input("Enter your secret word: ").lower()
+text = input("Enter your secret word: ").lower()
 # ask the user for the shift value
 shift = int(input("Enter your shift value: \n"))
 
 # check if encryption or decryption method was chosen and run the appropriate function
 if direction == 'encode':
-    edf.encrypt(word=plain_text, encryption=shift)
+    edf.encrypt(word=text, encryption=shift)
 else:
-    edf.decrypt(word=plain_text, encryption=shift)
+    edf.decrypt(word=text, encryption=shift)
