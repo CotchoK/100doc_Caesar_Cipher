@@ -5,6 +5,11 @@ import ascii_art as aa
 print(aa.logo)
 
 def run():
+    '''
+    A recursive function that will execute a sequence of commands and then depending on a user
+    prompt will either run itself again or exit the program
+    :return:
+    '''
     # ask for whether the message needs to be encrypted or decrypted and store in variable
     direction = input("Type 'encode' to encrypt, type 'decode' to decrypt\n").lower()
 
